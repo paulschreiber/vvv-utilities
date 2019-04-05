@@ -22,6 +22,10 @@ npm_package_install_list=(
 
 ### FUNCTIONS
 
+noroot() {
+  sudo -EH -u "vagrant" "$@";
+}
+
 network_detection() {
   # Network Detection
   #
