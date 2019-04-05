@@ -70,7 +70,7 @@ package_install() {
   if [[ ${#npm_package_install_list[@]} = 0 ]]; then
     echo -e "No npm packages to install.\n"
   else
-    npm install -g ${apt_package_install_list[@]}
+    npm install -g ${npm_package_install_list[@]}
   fi
 }
 
